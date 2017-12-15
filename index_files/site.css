@@ -1,0 +1,117 @@
+body
+{
+  background-color:#4D4D4D;
+}
+html, body
+{
+ height:100%;
+ margin:0px;
+ font-family:Microsoft JhengHei;
+}
+.wg-formfield
+{
+ font-family:Microsoft JhengHei;
+}
+.wg-button
+{
+ width:109px;
+ overflow:hidden;
+ display:block;
+}
+.wg-button a
+{
+ color:#FFFFFF;
+ text-decoration: none;
+ display:block;
+}
+.wg-button a:hover
+{
+ color:#FFFFCC;
+ text-decoration:underline;
+ display:block;
+}
+hr { 
+ height:1px;
+ color:#4D4D4D;
+ background-color:#4D4D4D;
+}
+h1 {
+ margin:4px 1px 1px 1px;
+ font-size:22px;
+ color:#DFA7BD;
+ border-bottom:1px solid #DFA7BD;
+}
+.wg-subparag {
+margin-left:16px;
+}
+.wg-paragraph {
+ font-size:13px;
+ color:#FFFFFF;
+}
+.wg-headertext { }
+.wg-paragraph h2 {
+ margin:1px;
+ font-size:15px;
+ color:#FFFFFF;
+ background-color: #4D4D4D;
+}
+.wg-paragraph h3 {
+ margin:1px;
+ font-size:13px;
+}
+.wg-paragraph a {
+ color:#FFFFCC;
+ text-decoration : underline;
+}
+.wg-paragraph ul#s2h {
+ margin-top:10px; margin-bottom:10px; padding-left:0px; margin-left:24px;
+}
+.wg-paragraph ol {
+ margin-top:10px; margin-bottom:10px;
+}
+.wg-panel {
+ background-color:#DFA7BD;
+ font-size:13px;
+ text-align:justify;
+ color:#000000;
+}
+.wg-panel h2 {
+ margin:1px;
+ text-align:center;
+ font-size:13px;
+ color:#000000;
+}
+.wg-panel h3 {
+ margin:1px;
+ text-align:left;
+ font-size:13px;
+ color:#000000;
+}
+.wg-panel a {
+ color:#000000;
+ text-decoration : underline;
+}
+.wg-panel ul#s2h {
+ margin-top:10px; margin-bottom:10px; padding-left:0px; margin-left:16px;
+}
+.wg-panel ol {
+ margin-top:10px; margin-bottom:10px;
+}
+
+.wg-navbt img {
+ border:0;cursor:hand;
+}
+#dhtmltooltip {
+ position: absolute;
+ width: 150px;
+ font-family:Microsoft JhengHei;
+ font-size:13px;
+ padding: 2px;
+ visibility: hidden;
+ z-index: 100;
+ border-style:solid;
+ border-width:1px;
+ border-color:#000000;
+ background-color:#FFFFDD;
+ filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
