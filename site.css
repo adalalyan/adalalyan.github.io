@@ -1,0 +1,122 @@
+/* Reset et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292929;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Header et navigation */
+.header {
+    background-color: #8f1042;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-item a {
+    color: #99FFCC;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: #4d4d4d;
+}
+
+/* Contenu principal */
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+    }
+
+    .profile-content {
+        flex: 1;
+    }
+
+    .profile-image {
+        width: 200px;
+        flex-shrink: 0;
+    }
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-title {
+    color: #99FFCC;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.profile-subtitle {
+    color: #97FA32;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.profile-details ul,
+.editorial-roles ul,
+.programme-committee ul,
+.co-organizer ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* Pied de page */
+.footer {
+    text-align: right;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+/* Obfuscation de l'email */
+.email-obfuscated {
+    color: #009B28;
+}
