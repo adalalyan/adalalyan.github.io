@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnak S. Dalalyan - Professor of Statistics</title>
+    <meta name="description" content="Arnak S. Dalalyan, Professor of Statistics at ENSAE Paris/CREST, Institut Polytechnique de Paris">
+    <style>
+        :root {
+            --primary-color: #33ff99;
+            --secondary-color: #97fa32;
+            --accent-color: #da2b70;
+            --dark-bg: #292929;
+            --darker-bg: #1a1a1a;
+            --medium-bg: #4d4d4d;
+            --text-light: #e0e0e0;
+            --link-color: #99ffcc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--darker-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #8f1042 0%, #6a0c31 100%);
+            border-bottom: 2px solid var(--accent-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .nav-container a {
+            padding: 1rem 1.5rem;
+            color: white;
+            font-weight: 500;
+            border-right: 1px solid rgba(218, 43, 112, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container a:last-child {
+            border-right: none;
+        }
+
+        .nav-container a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--primary-color);
+        }
+
+        /* Banner */
+        .banner {
+            background-color: var(--medium-bg);
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Profile Section */
+        .profile-sidebar {
+            text-align: center;
+            position: sticky;
+            top: 80px;
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .logo-grid img {
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease;
+        }
+
+        .logo-grid img:hover {
+            filter: brightness(1.2);
+        }
+
+        /* Main Content */
+        .main-content {
+            background-color: var(--dark-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--medium-bg);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .email {
+            color: var(--primary-color);
+            font-family: 'Courier New', monospace;
+        }
+
+        .email .separator {
+            color: #009b28;
+        }
+
+        .subsection {
+            margin-bottom: 1.5rem;
+        }
+
+        .subsection-title {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .list-item {
+            padding-left: 2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Institutional Logos */
+        .institution-logos {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: rgba(255,255,255,0.03);
+            border-radius: 8px;
+        }
+
+        .institution-logos img {
+            height: 60px;
+            object-fit: contain;
+            filter: brightness(0.9);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .institution-logos img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--medium-bg);
+            margin-top: 3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-sidebar {
+                position: static;
+                margin-bottom: 2rem;
+            }
+
+            .nav-container a {
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav-container {
+                flex-direction: column;
+            }
+
+            .nav-container a {
+                border-right: none;
+                border-bottom: 1px solid rgba(218, 43, 112, 0.5);
+            }
+
+            .institution-logos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .institution-logos img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="CV.html">CV</a>
+            <a href="research.html">Research</a>
+            <a href="publis.html">Publications</a>
+            <a href="software.html">Software</a>
+            <a href="cours.html">Teaching</a>
+            <a href="links.html">Links</a>
+            <a href="students.html">Students</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <img src="index_files/bnr2.png" alt="ENSAE Paris Banner" style="max-height: 100px;">
+    </div>
+
+    <div class="container">
+        <div class="content-grid">
+            <main class="main-content">
+                <header>
+                    <h1>Arnak S. Dalalyan</h1>
+                    <h2>Professor of Statistics</h2>
+                </header>
+
+                <section class="section">
+                    <h3>Affiliations</h3>
+                    <div class="info-item">
+                        ENSAE Paris / CREST, Institut Polytechnique de Paris
+                    </div>
+                    <div class="info-item">
+                        Associate member of <a href="https://www.hi-paris.fr/">Hi! PARIS</a>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Contact</h3>
+                    <div class="info-item">
+                        <strong>Email:</strong> 
+                        <span class="email">
+                            arnak<span class="separator">.</span>dalalyan<span class="separator">@</span>ensae<span class="separator">.</span>fr
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong><br>
+                        ENSAE Paris / CREST<br>
+                        <em>École Nationale de la Statistique et de l'Administration Économique</em><br>
+                        5, avenue Henry Le Chatelier<br>
+                        91120 Palaiseau, France
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Editorial Positions</h3>
+                    
+                    <div class="subsection">
+                        <div class="subsection-title">Editor/Associate Editor</div>
+                        <div class="list-item"><a href="https://imstat.org/journals-and-publications/electronic-journal-of-statistics/" target="_blank">Electronic Journal of Statistics</a> (2025-27)</div>
+                        <div class="list-item"><a href="http://www.bernoulli-society.org/index.php/publications/bernoulli-journal/bernoulli-journal-editorial-board" target="_blank">Bernoulli</a> (2019-2024)</div>
+                        <div class="list-item"><a href="http://www.jmlr.org/editorial-board.html" target="_blank">JMLR</a> (2019-2021)</div>
+                        <div class="list-item"><a href="https://www.imstat.org/journals-and-publications/annals-of-statistics/" target="_blank">Annals of Statistics</a> (2019-24)</div>
+                        <div class="list-item"><a href="http://www.imstat.org/ejs/" target="_blank">Electronic Journal of Statistics</a> (2010-2012, 2016-2020)</div>
+                        <div class="list-item"><a href="http://www.journals.elsevier.com/journal-of-statistical-planning-and-inference/" target="_blank">Journal of Statistical Planning and Inference</a> (2012-2016)</div>
+                        <div class="list-item"><a href="https://www.jstage.jst.go.jp/browse/jjss" target="_blank">Journal of the Japan Statistical Society</a> (2013-)</div>
+                        <div class="list-item"><a href="http://www.springer.com/mathematics/probability/journal/11203?detailsPage=editorialBoard" target="_blank">Statistical Inference for Stochastic Processes</a> (2014-25)</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3>Programme Committee</h3>
+                    <div class="list-item">Conference on Learning Theory (COLT) <a href="http://www.learningtheory.org/colt2019/the-conference/program-committee/">2015-2019</a></div>
+                    <div class="list-item">Neural Information Processing Systems (NIPS) <a href="https://nips.cc/Conferences/2016">2016-2018</a></div>
+                    <div class="list-item">International Conference on Machine Learning (ICML) <a href="https://icml.cc/Conferences/2022/Reviewers">2022</a></div>
+                </section>
+
+                <section class="section">
+                    <h3>Conference Organization</h3>
+                    <div class="list-item"><a href="DS_sur_un_plateau.pdf">DS sur un plateau</a></div>
+                    <div class="list-item"><a href="https://fconferences.cirm-math.fr/1691.html">Meeting in Mathematical Statistics 2017</a></div>
+                    <div class="list-item"><a href="StatTime.html">Statistics time: Advances in Statistics for Random Processes</a></div>
+                    <div class="list-item"><a href="MMS2016.html">Meeting in Mathematical Statistics 2016</a></div>
+                    <div class="list-item"><a href="MMS2015.html">Meeting in Mathematical Statistics 2015</a></div>
+                    <div class="list-item"><a href="http://congres-math.univ-mlv.fr/smcd_2011">Journées Statistiques de Marne 2011</a></div>
+                </section>
+
+                <div class="institution-logos">
+                    <img src="index_files/crest_logo.png" alt="CREST Logo">
+                    <img src="index_files/logo_ensae_ipparis.png" alt="ENSAE Paris / IP Paris Logo">
+                    <img src="index_files/logo-hi-paris.png" alt="Hi! Paris Logo">
+                    <img src="index_files/ERC_logo.png" alt="ERC Logo">
+                </div>
+            </main>
+
+            <aside class="profile-sidebar">
+                <img src="Photos/MesPhotos/Arnak2019.jpg" alt="Photo of Arnak S. Dalalyan" class="profile-photo">
+                <div class="logos">
+                    <img src="index_files/crest_logo.jpg" alt="" class="logo">
+                    <img src="index_files/logo_ensae_ipparis.jpg" alt="" class="logo">
+                    <img src="index_files/logo-hi-paris.jpg" alt="" class="logo">
+                    <img src="index_files/ERC_logo.jpg" alt="" class="logo">
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        Last update: December 10, 2025
+    </footer>
+</body>
+</html>
