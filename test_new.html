@@ -24,10 +24,11 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Microsoft JhengHei', sans-serif;
             background-color: var(--darker-bg);
             color: var(--text-light);
             line-height: 1.6;
+            font-size: 19px;
         }
 
         a {
@@ -121,20 +122,22 @@
         .logo-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
+            gap: 0.8rem;
             margin-top: 1rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
         }
 
         .logo-grid img {
             width: 100%;
             height: 50px;
             object-fit: contain;
-            filter: brightness(0.9);
-            transition: filter 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .logo-grid img:hover {
-            filter: brightness(1.2);
+            transform: scale(1.05);
         }
 
         /* Main Content */
@@ -199,29 +202,7 @@
             margin-bottom: 0.3rem;
         }
 
-        /* Institutional Logos */
-        .institution-logos {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: rgba(0,0,0,0.03);
-            border-radius: 8px;
-        }
-
-        .institution-logos img {
-            height: 60px;
-            object-fit: contain;
-            filter: brightness(0.9);
-            transition: transform 0.3s ease, filter 0.3s ease;
-        }
-
-        .institution-logos img:hover {
-            transform: scale(1.1);
-            filter: brightness(1.2);
-        }
+        /* Institutional Logos - REMOVED */
 
         /* Footer */
         footer {
@@ -370,13 +351,18 @@
                     <div class="list-item"><a href="http://congres-math.univ-mlv.fr/smcd_2011">Journées Statistiques de Marne 2011</a></div>
                 </section>
 
-                <div class="institution-logos">
-                    <img src="index_files/crest_logo.jpg" alt="CREST Logo">
-                    <img src="index_files/logo_ensae_ipparis.jpg" alt="ENSAE Paris / IP Paris Logo">
-                    <img src="index_files/logo-hi-paris.jpg" alt="Hi! Paris Logo">
-                    <img src="index_files/ERC_logo.jpg" alt="ERC Logo">
-                </div>
+
             </main>
+
+            <aside class="profile-sidebar">
+                <img src="Photos/MesPhotos/Arnak2019.jpg" alt="Photo of Arnak S. Dalalyan" class="profile-photo">
+                <div class="logo-grid">
+                    <img src="index_files/crest_logo.jpg" alt="CREST">
+                    <img src="index_files/logo_ensae_ipparis.jpg" alt="ENSAE / IP Paris">
+                    <img src="index_files/logo-hi-paris.jpg" alt="Hi! Paris">
+                    <img src="index_files/ERC_logo.jpg" alt="ERC">
+                </div>
+            </aside>
         </div>
     </div>
 
