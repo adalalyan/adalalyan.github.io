@@ -1,5 +1,5 @@
 span.undefined { color:red; }
-#pubTable {width:80%; margin: 0 auto; clear: both;}
+#pubTable {width:90%; margin: 0 auto; clear: both;}
 #pubChart { float:left;}
 .clear {clear:both;}
 #pubyeardetails {font-size:smaller;float:right; padding:5px; display:none; border:1px solid #FFFFFF; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border-radius:10px;}
