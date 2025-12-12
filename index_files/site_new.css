@@ -1,0 +1,309 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg: #4D4D4D;
+    --secondary-bg: #292929;
+    --accent-color: #DFA7BD;
+    --menu-color: #8f1042;
+    --text-light: #FFFFFF;
+    --text-accent: #51FF99;
+    --link-color: #FFFFCC;
+    --border-color: #4D4D4D;
+}
+
+body {
+    background-color: var(--primary-bg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text-light);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Modern font stack with fallback */
+.wg-formfield, 
+.wg-paragraph,
+.wg-panel,
+.wg-button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Microsoft JhengHei', sans-serif;
+}
+
+/* Typography */
+h1 {
+    margin: 4px 0 8px 0;
+    font-size: 22px;
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+
+h2 {
+    margin: 8px 0 4px 0;
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+h3 {
+    margin: 4px 0;
+    font-size: 15px;
+}
+
+/* Components */
+.wg-button {
+    display: inline-block;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.wg-button a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.wg-button a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Active menu item indicator */
+.wg-button.active a {
+    font-weight: bold;
+    color: var(--link-color);
+}
+
+hr {
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
+    margin: 16px 0;
+}
+
+/* Content sections */
+.wg-paragraph {
+    font-size: 15px;
+    color: var(--text-light);
+}
+
+.wg-paragraph a {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.wg-paragraph a:hover {
+    color: #FFCC66;
+}
+
+.wg-panel {
+    background-color: var(--accent-color);
+    padding: 16px;
+    border-radius: 4px;
+    color: #000000;
+}
+
+.wg-panel h2,
+.wg-panel h3 {
+    color: #000000;
+}
+
+.wg-panel a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Lists */
+.wg-paragraph ul,
+.wg-panel ul {
+    margin: 12px 0;
+    padding-left: 24px;
+}
+
+.wg-paragraph ol,
+.wg-panel ol {
+    margin: 12px 0;
+    padding-left: 24px;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and navigation */
+.header {
+    background: linear-gradient(to bottom, var(--menu-color) 0%, #7a0d38 100%);
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.nav-divider {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 24px;
+    margin: 0 8px;
+}
+
+/* Main content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 32px;
+    padding: 32px 20px;
+}
+
+/* Profile section */
+.profile-header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 2.2em;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.profile-title {
+    font-size: 1.5em;
+    color: #97FA32;
+    margin-bottom: 24px;
+}
+
+.profile-details {
+    margin: 32px 0;
+}
+
+.detail-item {
+    margin-bottom: 20px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.detail-item::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 16px;
+    font-size: 1.2em;
+}
+
+/* Logo section */
+.logo-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 32px 0;
+}
+
+.logo-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Sidebar */
+.sidebar {
+    padding-top: 20px;
+}
+
+.profile-photo {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    padding: 16px 20px;
+    text-align: right;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .nav-divider {
+        display: none;
+    }
+    
+    .wg-button {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .profile-name {
+        font-size: 1.8em;
+    }
+    
+    .profile-title {
+        font-size: 1.2em;
+    }
+    
+    .logo-grid {
+        gap: 15px;
+    }
+    
+    .logo-item {
+        height: 50px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .wg-button,
+    .sidebar {
+        display: none;
+    }
+    
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .wg-paragraph a {
+        color: black;
+        text-decoration: underline;
+    }
+}
