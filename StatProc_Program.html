@@ -274,4 +274,161 @@
 		</div>
 	</div>
 
+<dialog id="abstract-nakahiro-yoshida" class="abstract-dialog" aria-labelledby="abstract-nakahiro-yoshida-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-nakahiro-yoshida-title">Risk comparison theorems in deep learning and application to diffusion coefficients</h2>
+                <h3>Nakahiro YOSHIDA</h3>
+                <p>Estimation of the generalization error is essential for assessing the performance of machine learning models. In this work, we consider a stochastic regression model of an Itô process with a mixing covariate process, and discuss the estimation of the generalization error to evaluate the learning of diffusion coefficients. To this end, we present several inequalities comparing the generalization error with the empirical error. These inequalities are generic and independent of the specific structure of the underlying stochastic models.</p>
+<p>The talk is based on a joint work with Arnaud Gloter.</p>
+        </div>
+</dialog>
+
+<dialog id="abstract-serguei-pergamenchtchikov" class="abstract-dialog" aria-labelledby="abstract-serguei-pergamenchtchikov-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-serguei-pergamenchtchikov-title">Nonparametric sequential estimation for diffusion processes based on discrete data</h2>
+                <h3>Serguei PERGAMENCHTCHIKOV</h3>
+                <p>In this talk we study the nonparametric estimation problem for the stochastic differential equation defined as \[   \mathrm{d} y_{t}=S(y_{t})\,\mathrm{d} t +\,b(y_{t}) \,\mathrm{d} W_{t}\,, \quad 0\le t\le T\,, \] where \((W_{t})_{t\ge 0}\) is the standard Wiener process, \(S(\cdot)\) is unknown drift function and \(b(\cdot)\) is unknown diffusion coefficient.  The problem is to estimate the function \(S(\cdot)\) on the basis of the discrete observations \[   (y_{t_{j}})_{1\le j\le N}\,,\quad t_{j}=j\delta\,, \] where \(\delta\in(0,1)\) is the frequency and \(N\) is the sample size.</p>
+<p>Note that, for the complete data this problem is well known (see, for example, in [6] and the references therein).  For weighted integral risks for such problems the efficient estimation methods were developed in [1] and the sharp lower bound for the minimax risk is found.  In [4] the efficient estimation problems are studied for the usual quadratic risks.</p>
+<p>In this talk we study the drift estimation problem on the basis of the discrete data motivated by the big data analysis for the diffusion models ([2,3,5]).  To this end, on the basis of sequential analysis methods we develop model selection procedures, for which we show non asymptotic sharp oracle inequalities. Through the obtained inequalities we show that the constructed model selection procedures are asymptotically efficient in adaptive setting, i.e. in the case when the model regularity is unknown.  For the first time for such problems, it is found in the explicit form the celebrated Pinsker constant, which provides the sharp lower bound for the minimax squared accuracy normalized with the optimal convergence rate.  Then one shows that the asymptotic quadratic risk for the model selection procedure asymptotically coincides with the obtained lower bound, i.e., this means that the constructed procedure is efficient.  Finally, on the basis of the constructed model selection procedures in the framework of the big data models, we provide efficient estimation without using the parameter dimension or any sparse conditions.</p>
+<p>The talk is based on a joint work with Leonid Galtchouk.</p>
+<p><strong>References</strong></p>
+<p>[1] Dalalyan, A.S. and Kutoyants, Yu.A. (2002) <em>Asymptotically efficient trend coefficient estimation for ergodic diffusion.</em> Mathematical Methods of Statistics 11(4):402–427.</p>
+<p>[2] De Gregorio, A. and Iacus, S.M. (2012) <em>Adaptive LASSO-type estimation for multivariate diffusion processes.</em> Econometric Theory 28(4):838–860.  <a href="https://doi.org/10.1017/S0266466611000806" target="_blank">https://doi.org/10.1017/S0266466611000806</a></p>
+<p>[3] Fujimori, K. (2019) <em>The Danzing selector for a linear model of diffusion processes.</em>  Statistical Inference for Stochastic Processes 22(3):475–498.  <a href="https://doi.org/10.1007/s11203-018-9191-y" target="_blank">https://doi.org/10.1007/s11203-018-9191-y</a></p>
+<p>[4] Galtchouk, L.I. and Pergamenchtchikov, S.M. (2011) <em>Adaptive sequential estimation for ergodic diffusion processes in quadratic metric.</em> Journal of Nonparametric Statistics 23(2):255–285.  <a href="https://doi.org/10.1080/10485252.2010.544307" target="_blank">https://doi.org/10.1080/10485252.2010.544307</a></p>
+<p>[5] Galtchouk, L.I. and Pergamenchtchikov, S.M. (2022) <em>Adaptive efficient analysis for big data ergodic diffusion models.</em> Statistical Inference for Stochastic Processes 25(1):127–158.  <a href="https://doi.org/10.1007/s11203-021-09241-9" target="_blank">https://doi.org/10.1007/s11203-021-09241-9</a></p>
+<p>[6] Kutoyants, Yu.A. (2004) <em>Statistical Inferences for Ergodic Diffusion Processes.</em> Springer, London.  <a href="https://doi.org/10.1007/978-1-4471-3866-2" target="_blank">https://doi.org/10.1007/978-1-4471-3866-2</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-michael-s-rensen" class="abstract-dialog" aria-labelledby="abstract-michael-s-rensen-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-michael-s-rensen-title">Approximate likelihood inference for stochastic differential equations using splitting schemes</h2>
+                <h3>Michael SØRENSEN</h3>
+                <p>The complexity of likelihood inference for stochastic differential equations based on discrete time samples often necessitates the use of approximations. Approximate likelihood methods for high frequency data, such as Gaussian pseudo-likelihood functions, have been studied intensively and are popular in applications, for instance in financial econometrics. However, for strongly nonlinear models these methods usually do not perform well when the sampling frequency is not high.</p>
+<p>New developments of approximate likelihood methods based on splitting schemes are presented. These methods perform well also for strongly nonlinear models and at moderate sampling frequencies. Splitting schemes were originally introduced to solve ODEs and SDEs numerically, but in [1], Pilipovic, Samson and Ditlevsen proposed to use them for statistical inference. In the lecture a more general approach is presented that is applicable to a broad class of diffusion models. The theory is developed in the framework of approximate martingale estimating functions, which provide approximations to the score function and estimators that are efficient for high frequency data. Two splitting schemes are considered, Lie-Trotter and Strang, for which approximate martingale estimating function of order 2 and 3, respectively, are obtained. This implies that estimators based on the Strang splitting scheme works well for relatively low sampling frequencies.</p>
+<p>The talk is based on a joint work with Susanne Ditlevsen and Adeline Samson.</p>
+<p><strong>References</strong></p>
+<p>[1] Pilipovic, P., Samson, A. and Ditlevsen, S. (2024) <em>Parameter estimation in nonlinear multivariate stochastic differential equations based on splitting schemes.</em> Annals of Statistics 52(2):842–867.  <a href="https://doi.org/10.1214/24-AOS2371" target="_blank">https://doi.org/10.1214/24-AOS2371</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-mark-podolskij" class="abstract-dialog" aria-labelledby="abstract-mark-podolskij-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-mark-podolskij-title">Statistical methods for interacting particle systems</h2>
+                <h3>Mark PODOLSKIJ</h3>
+                <p>This talk delves into the challenging problem of nonparametric estimation for the interaction function within diffusion-type particle system models. More specifically, we consider stochastic systems of the form \[   dX_t^{i,N} = (\varphi * \mu_t^N)(X_t^{i,N})\,dt + \sigma dW_t^i,\qquad i=1,\dots,N, \] where \[   \mu_t^N = \frac1N \sum_{i=1}^N \delta_{X_t^{i,N}} \] denotes the empirical measure of the particle system and \(\varphi\) is an unknown interaction function. Based on continuous observations of the particle trajectories over a fixed time horizon, we propose a novel estimation methodology relying on empirical risk minimization over suitable sieve spaces. Our study encompasses an analysis of the stochastic and approximation errors associated with the proposed procedure, along with an examination of a minimax lower bound. In particular, we will introduce a metric, which naturally corresponds to the underlying empirical risk minimization, under study the estimation error with respect to this metric. In a second step, we investigate convergence rates in the conventional \(L^2\)-norm and discuss their optimality.</p>
+<p>The talk is based on a joint work with Denis Belomestny and Shi-Yuan Zhou.</p>
+        </div>
+</dialog>
+
+<dialog id="abstract-hiroki-masuda" class="abstract-dialog" aria-labelledby="abstract-hiroki-masuda-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-hiroki-masuda-title">Quasi-likelihood inference for SDE with mixed-effects</h2>
+                <h3>Hiroki MASUDA</h3>
+                <p>We consider statistical inference for a class of dynamic mixed-effects models described by stochastic differential equations whose drift and diffusion coefficients simultaneously depend on fixed- and random-effects parameters. In the proposed model, the random dynamics of the \(i\)-th individual (\(i=1,\ldots,N\)) is described by \[   Y_i(t) = Y_i(0) + \tau_i \, \left(\varphi_{f} \cdot \int_0^t a_f(Y_i(s))ds +   \varphi_{r,i} \cdot \int_0^t a_r(Y_i(s))ds \right) +\sqrt{\tau_i}\int_0^t   c(Y_i(s);\eta) dw_i(s), \] where \(t\in[0,T]\) with \(T>0\) fixed, and where \(\tau_i \sim f(\tau;\theta_\tau)d\tau\) and \(\varphi_{r,i} \sim N_{p_{\varphi_r}}(0,\Sigma_r)\) denote the i.i.d. random-effect parameters (\(\tau_i>0\)). Assuming that we observe a discrete-time sample \(\{Y_i(t_j)\::\:j=0,1,\ldots,n;\:i=1,\ldots,N\}\), where \(t_j=jT/n\) for each \(i\), we propose a stepwise inference procedure and prove its theoretical properties as \(n,N\to\infty\) with \(n^{\mathsf{a}’} \lesssim N \lesssim n^{\mathsf{a}’{}’}\) for some constants \(\mathsf{a}’\) and \(\mathsf{a}’{}’\) such that \(0<\mathsf{a}’\le\mathsf{a}’{}’<1\).</p>
+<p>The methodology is based on suitable quasi-likelihood functions by profiling the random effect in the diffusion coefficient at the first stage and then incorporating the marginal distribution in the drift coefficient at the second stage, resulting in a fully explicit and computationally efficient method.</p>
+<p>The main claims are the asymptotic normalities of the proposed estimators.</p>
+<p>1. First, ignoring the drift part, we focus on the “diffusion” parameter \(\vartheta_1:=(\eta,\theta_\tau) \in \Theta_\eta \times \Theta_\tau\) \[   \left( \sqrt{nN}(\widehat{\eta} -\eta_{0}),\, \sqrt{N}(\widehat{\theta}_\tau   -\theta_{\tau,0}) \right) \overset{\mathcal{L}}{\to}   N_{p_{\eta}+p_{\tau}}\left(0,\,\mathrm{diag}\left(Q_{11,0}^{-1},\,   \mathcal{I}_{12}^{-1}\right)\right). \]</p>
+<p>2. With \(\widehat{\vartheta}_1\), estimate the “drift” parameter \(\vartheta_2:=(\varphi_f,\Sigma_r) \in \Theta_{\varphi_f} \times \Theta_{\Sigma_r}\): \[   \sqrt{N}(\widehat{\vartheta}_2 -\vartheta_{2,0}) \overset{\mathcal{L}}{\to}   N_{q_{\varphi}}\left(0,\,\mathcal{J}_{2,0}^{-1}\right). \]</p>
+<p>In our estimation framework, the stepwise nature is designed not merely for computational ease but as an essential component to construct a practical and explicit recipe. Another strength of the proposed approach is its ability to incorporate random effects following different distributions into the diffusion coefficient while simultaneously allowing for both random and fixed effects in the drift term.</p>
+<p>The talk is based on the joint work [1] with Maud Delattre (INRAE).</p>
+<p><strong>References</strong></p>
+<p>[1] Delattre, M. and Masuda, H. (2025) <em>Quasi-likelihood inference for SDE with mixed-effects observed at high frequency.</em> Preprint.  <a href="https://arxiv.org/abs/2508.17910" target="_blank">https://arxiv.org/abs/2508.17910</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-pavel-chigansky" class="abstract-dialog" aria-labelledby="abstract-pavel-chigansky-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-pavel-chigansky-title">Inference of processes from partial observations</h2>
+                <h3>Pavel CHIGANSKY</h3>
+                <p>This talk presents a short survey on parametric estimation for Markov processes from partial observations.  While the problem has a long history, some of its principal aspects remain open, particularly for continuous-time processes.</p>
+<p>I will highlight the inherent difficulties and discuss recent progress, including contributions by Yury Kutoyants.</p>
+        </div>
+</dialog>
+
+<dialog id="abstract-masayuki-uchida" class="abstract-dialog" aria-labelledby="abstract-masayuki-uchida-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-masayuki-uchida-title">Estimation for SPDEs in two space dimensions with unknown damping parameters using temporal and spatial increments</h2>
+                <h3>Masayuki UCHIDA</h3>
+                <p>This talk addresses statistical inference for a family of second-order linear parabolic stochastic partial differential equations (SPDEs) in two space dimensions driven by two distinct Q-Wiener processes. Under a high-frequency spatio-temporal sampling scheme, we develop estimation methods based on quadratic variations of both temporal and spatial increments to estimate the damping parameters of the noise terms. Furthermore, we obtain minimum contrast estimators for four coefficient parameters appearing in the SPDEs. The remaining parameters are estimated via appropriately constructed approximate coordinate processes. We conclude by illustrating the finite-sample performance of the proposed methods through Monte Carlo simulations.</p>
+<p>The talk is based on a joint work with Yozo Tonaki (University of Osaka) and Yusuke Kaino (Kobe University).</p>
+        </div>
+</dialog>
+
+<dialog id="abstract-youri-kabanov" class="abstract-dialog" aria-labelledby="abstract-youri-kabanov-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-youri-kabanov-title">On exit probabilities for generalized Ornstein-Uhlenbeck processes</h2>
+                <h3>Youri KABANOV</h3>
+                <p>Nowadays, insurance companies place their capital reserves in stock markets to obtain additional gain. The collective risk theory assuming absence of risky investment became obsolete. To replace it, a new theory emerged. The problem is how to explain its result to master students: the existing studies are based on advanced mathematical tools and cumbersome estimates. In the recent note [1], it was developed a new approach how to get and solve IDE for the ruin probabilities and obtain their asymptotic behavior. The approach is based on the analysis of IDE and a verification theorem identifying its solution with the ruin probability as a function of the initial capital.</p>
+<p>The simplicity of it was noticed even by LLN: “<em>The analytical approach relies on classical tools: integration by parts, Volterra integral equations, contraction mappings, and Gronwall-type estimates. These techniques are well established in the literature on ruin probabilities and do not represent a methodological advance.</em>”  They do!</p>
+<p><strong>References</strong></p>
+<p>[1] Antipov, V. and Kabanov, Yu. (2026) <em>On the integro-differential equation arising in the ruin problem for non-life insurance models with investment.</em> Mathematics 14(6):1035.  <a href="https://doi.org/10.3390/math14061035" target="_blank">https://doi.org/10.3390/math14061035</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-ilia-negri" class="abstract-dialog" aria-labelledby="abstract-ilia-negri-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-ilia-negri-title">Localization of radioactive source of unknown power in the space</h2>
+                <h3>Ilia NEGRI</h3>
+                <p>We consider the statistical problem of localizing an emission source in a three-dimensional space using a sensor network.  We suppose that the sensors record independent, inhomogeneous Poisson processes (see e.g. [3]), and we want to estimate both the unknown 3D spatial coordinates of the source and the amplitude of the signal. Note that a similar problem on the plane and with known amplitude, was studied in [1] (for both fixed and moving source).</p>
+<p>Following Ibragimov and Khasminskii [2], we study this statistical model by analyzing the normalized likelihood ratio process. We verify three fundamental lemmas regarding the process’s tail behavior, finite-dimensional convergence and trajectory smoothness. This allows us to deduce the Local Asymptotic Normality (LAN) property of the underlying statistical experiment, and to show that the Maximum Likelihood Estimator (MLE) and the Bayesian Estimator (BE) are consistent, asymptotically normal and efficient. A special attention is payed to the identifiability condition, which is reduced to a purely geometric condition on the spatial distribution of the sensors.</p>
+<p>However, in practical applications, globally maximizing the non-convex likelihood function or evaluating the multivariate Bayesian integrals is highly problematic and computationally prohibitive. Hence, we introduce a multi-dimensional Least Squares Estimator (LSE) and prove its consistency and asymptotic normality under the condition of non-degeneracy of the limit of the corresponding Gram matrix.  Note that the latter condition reduces to the same geometric condition as the identifiability one, providing once more a bridge between statistical properties of the estimators and geometric sensor network design.</p>
+<p>Finally, while the LSE is computationally cheap, it is statistically inefficient.  To overcome this problem, we construct a One-Step Estimator by updating a preliminary LSE through Le Cam’s One-Step Estimation Procedure. The obtained estimator is at the same time asymptotically efficient and computationally affordable.</p>
+<p>The talk is based on a joint work with Yu.A. Kutoyants and S. Dachian.</p>
+<p><strong>References</strong></p>
+<p>[1] Chernoyarov, O.V., Dachian, S. and Kutoyants, Yu.A. (2026) <em>Localization of moving Poisson source on the plane.</em> Annals of the Institute of Statistical Mathematics 78(1):69–92.  <a href="https://doi.org/10.1007/s10463-025-00937-w" target="_blank">https://doi.org/10.1007/s10463-025-00937-w</a></p>
+<p>[2] Ibragimov, I.A. and Khasminskii, R.Z. (1981) <em>Statistical Estimation. Asymptotic Theory.</em> Springer-Verlag, New York.  <a href="https://doi.org/10.1007/978-1-4899-0027-2" target="_blank">https://doi.org/10.1007/978-1-4899-0027-2</a></p>
+<p>[3] Kutoyants, Yu.A. (2023) <em>Introduction to the Statistics of Poisson Processes and Applications.</em> Springer, Cham.  <a href="https://doi.org/10.1007/978-3-031-37054-0" target="_blank">https://doi.org/10.1007/978-3-031-37054-0</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-yuri-golubev" class="abstract-dialog" aria-labelledby="abstract-yuri-golubev-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-yuri-golubev-title">On statistical problems related to navigation with LEO satellites</h2>
+                <h3>Yuri GOLUBEV</h3>
+                <p>The emergence of Low Earth Orbit (LEO) satellite constellations designed to provide internet access naturally leads to using these satellites for navigation (see e.g. [1]). The idea of determining the receiver’s location on the Earth’s surface is based on computing Doppler’s shift profiles for several satellites.</p>
+<p>This talk focuses on some simplified statistical problems related to navigation using the Starlink satellites. Formally, it deals with estimation of unknown offset time \(\theta\) and Doppler’s shift \(\theta’\) based on the observations \[   \mathrm{d}Y(f)=S_N[(1-\theta’)t-\theta]\mathrm{d}t+\sigma\mathrm{d}W(t),\;t\in [-T/2,T/2], \] where \(W(\cdot)\) is a complex-valued Wiener process and \(S_N(\cdot)\) is an Orthogonal Frequency-Division Multiplexing (OFDM) random process. The Starlink OFDM has \(N=1024\) or \(N=2048\) sub-carriers and the unknown parameters \(\theta’\) and \(\theta\) can be estimated since a periodic sequence of synchronization insertions is embedded in the received signal.</p>
+<p>The main mathematical results in this talk are related to the estimation of \(\theta\) when \(\theta’\) is assumed to be known. It is shown that, asymptotically, as \(N\rightarrow\infty\) and under certain conditions, this problem is equivalent to the shift parameter estimation of a discontinuous signal. Fundamentally important results in this problem were obtained by Ibragimov, Khasminskii [2] and Kutoyants [3].</p>
+<p>The numerical complexity of estimating the Doppler shift \(\theta’\) by the Maximum A Posteriori Probability method is of the order \(N^2\), which is a very serious obstacle to practical application. Therefore this talk considers a blind estimation method that does not exploit the Starlink signal structure. It is shown that this method results in asymptotically Gaussian estimates.</p>
+<p><strong>References</strong></p>
+<p>[1] Reid, T.G.R., Neish, A.M., Walter, T. and Enge, P.K. (2018) <em>Broadband LEO constellations for navigation.</em> Journal of the Institute of Navigation 65(2):205–220.  <a href="https://doi.org/10.1002/navi.234" target="_blank">https://doi.org/10.1002/navi.234</a></p>
+<p>[2] Ibragimov, I.A. and Khasminskii, R.Z. (1981) <em>Statistical Estimation. Asymptotic Theory.</em> Springer-Verlag, New York.  <a href="https://doi.org/10.1007/978-1-4899-0027-2" target="_blank">https://doi.org/10.1007/978-1-4899-0027-2</a></p>
+<p>[3] Kutoyants, Yu.A. (2023) <em>Introduction to the Statistics of Poisson Processes and Applications.</em> Springer, Cham.  <a href="https://doi.org/10.1007/978-3-031-37054-0" target="_blank">https://doi.org/10.1007/978-3-031-37054-0</a></p>
+        </div>
+</dialog>
+
+<dialog id="abstract-mathieu-rosenbaum" class="abstract-dialog" aria-labelledby="abstract-mathieu-rosenbaum-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-mathieu-rosenbaum-title">A unified theory of order flow, market impact and volatility</h2>
+                <h3>Mathieu ROSENBAUM</h3>
+                <p>We propose a microstructural model for the order flow in financial markets that distinguishes between core orders and reaction flow, both modeled as Hawkes processes.</p>
+<p>This model has a natural scaling limit that reconciles a number of salient empirical properties: persistent signed order flow, rough trading volume and volatility, and power-law market impact. In our framework, all these quantities are pinned down by a single statistic \(H_0\), which measures the persistence of the core flow. Specifically, the signed flow converges to the sum of a fractional process with Hurst index \(H_0\) and a martingale, while the limiting traded volume is a rough process with Hurst index \(H_0-1/2\). No-arbitrage constraints imply that volatility is rough, with Hurst parameter \(2H_0-3/2\), and that the price impact of trades follows a power law with exponent \(2-2H_0\). The analysis of signed order flow data yields an estimate \(H_0\) close to \(3/4\). This is not only consistent with the square-root law of market impact, but also turns out to match estimates for the roughness of traded volumes and volatilities remarkably well.</p>
+<p>The talk is based on a joint work with Johannes Muhle Karbe, Youssef Ouazzani-Chahdi and Gregoire Szymanski.</p>
+        </div>
+</dialog>
+
+<dialog id="abstract-yury-a-kutoyants" class="abstract-dialog" aria-labelledby="abstract-yury-a-kutoyants-title">
+        <button type="button" class="abstract-close" onclick="closeAbstract(this)">Close</button>
+        <div class="abstract-content">
+                <h2 id="abstract-yury-a-kutoyants-title">Hidden Markov model in which higher noise and fewer observations improve parameter estimators</h2>
+                <h3>Yury A. KUTOYANTS</h3>
+                <p>We study a continuous-time model of a partially observed linear system that depends on unknown parameters. The problem of approximation of the Kalman-Bucy filter is considered. The proposed solution is in two seps: estimation of unknown parameters and study of the K-B equations in which the unknown parameter is replaced by the estimator following [1]. It is assumed that the noises in the observation and state equations tend to zero, but at different rates. It is shown that for some rates in the hidden component, a higher noise level leads to a smaller error of the MLE, that the rate of convergence of the MDE constructed from observations on a vanishing interval is better than that on the whole interval, and that even though the limit system does not depend on unknown parameter, the consistent estimation is possible.</p>
+<p>The proposed approximation of the unobserved component involves three steps. First, MDEs of the unknown parameters are constructed by the observations on the small <em>leaning</em> interval. Second, these estimators are used to define the one-step MLE processes. Finally, the resulting estimator-process is substituted into the equations of the Kalman filter. The solution of the obtained equations provides the desired approximation (adaptive Kalman filter). The asymptotic properties of all the aforementioned estimators of the unknown parameters are studied in details. The asymptotic efficiency of the adaptive filtering procedure is also discussed. All presented results can be found in [2].</p>
+<p><strong>References</strong></p>
+<p>[1] Kutoyants, Yu.A. (2025) <em>Hidden Markov Processes and Adaptive Filtering.</em> Springer, Cham.  <a href="https://doi.org/10.1007/978-3-032-00052-1" target="_blank">https://doi.org/10.1007/978-3-032-00052-1</a></p>
+<p>[2] Kutoyants, Yu.A. (2026) <em>Hidden Markov model in which higher noise and fewer observations improve parameter estimators.</em> Submitted.</p>
+        </div>
+</dialog>
 </body>
