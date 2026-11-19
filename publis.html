@@ -56,7 +56,6 @@
 
 
 <style type="text/css">
-    /* Preserve the same 900px table layout as software.html. */
     #publication-page { width: 900px; table-layout: fixed; }
     #publication-page .publication-banner {
         display: block;
@@ -105,6 +104,12 @@
     }
     #pubTable tr > td:not(:first-child) a { overflow-wrap: anywhere; }
     #bibtex { white-space: pre-wrap; overflow-wrap: break-word; }
+	#pubTable tr > th:nth-child(2),
+	#pubTable tr > td:nth-child(2) {
+    	width: 180px !important;
+    	white-space: normal;
+    	vertical-align: middle;
+	}
 </style>
 </head>
 <body>
