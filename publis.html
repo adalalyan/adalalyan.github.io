@@ -102,13 +102,42 @@
         overflow-wrap: break-word;
         word-break: normal;
     }
-    #pubTable tr > td:not(:first-child) a { overflow-wrap: anywhere; }
-    #bibtex { white-space: pre-wrap; overflow-wrap: break-word; }
-	#pubTable tr > th:nth-child(2),
-	#pubTable tr > td:nth-child(2) {
-    	width: 180px !important;
-    	white-space: normal;
-    	vertical-align: middle;
+
+	#pubTable {
+	    width: 100% !important;
+	    table-layout: fixed;
+	    border-collapse: collapse;
+	}
+	
+	#pubTable th,
+	#pubTable td {
+	    box-sizing: border-box;
+	    min-width: 0;
+	    vertical-align: middle !important;
+	}
+	
+	/* Year */
+	#pubTable th:nth-child(1),
+	#pubTable td:nth-child(1) {
+	    width: 65px !important;
+	    white-space: nowrap !important;
+	}
+	
+	/* Publication type */
+	#pubTable th:nth-child(2),
+	#pubTable td:nth-child(2) {
+	    width: 130px !important;
+	    white-space: normal !important;
+	    overflow-wrap: anywhere;
+	}
+	
+	/* Publication details: fill the remaining width and wrap */
+	#pubTable th:nth-child(3),
+	#pubTable td:nth-child(3) {
+	    width: auto !important;
+	    white-space: normal !important;
+	    overflow-wrap: anywhere;
+	    word-break: normal;
 	}
 </style>
 </head>
